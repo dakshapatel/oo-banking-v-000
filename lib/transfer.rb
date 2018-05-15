@@ -18,6 +18,7 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
+    
     if @status != "complete"
         @receiver.deposit(@amount)
         @sender.withdraw(@amount)
