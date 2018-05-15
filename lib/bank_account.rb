@@ -10,8 +10,9 @@ def initialize(name)
 
 end
 
-def deposit
-#deposit money into its account(self)
+def deposit(amount)
+  @balance += amount 
+
 end
 
 def display_balance
