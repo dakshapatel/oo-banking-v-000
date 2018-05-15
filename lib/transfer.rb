@@ -34,11 +34,10 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def reverse_transfer
-
-    @sender.deposit(@amount)
-    @receiver.withdraw(@amount)
-    @status = "reversed"
-  end 
-
-
+    if @status == "complete"
+      @sender.deposit(@amount)
+      @receiver.withdraw(@amount)
+      @status = "reversed"
+    end     
+  end
 end
