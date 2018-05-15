@@ -18,7 +18,7 @@ end
 
 def display_balance
   #binding.pry
-  puts "Your balance is #{@balance}."
+  puts "Your balance is #{balance}."
   #puts output
 end
 
