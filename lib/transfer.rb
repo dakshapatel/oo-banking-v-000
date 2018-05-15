@@ -18,12 +18,18 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
-    
-    if @status != "complete"
-        @receiver.deposit(@amount)
-        @sender.withdraw(@amount)
-        @status = "complete"
+    if @sender.valid?
+
+      if  @status != "complete"
+          @receiver.deposit(@amount)
+          @sender.withdraw(@amount)
+          @status = "complete"
     #if the transfer status is not = to complete than do the transfer
+
+      end
+    else
+      puts "Transaction rejected. Please check your account balance."
+      @status = "rejected"
     end
   end
 
