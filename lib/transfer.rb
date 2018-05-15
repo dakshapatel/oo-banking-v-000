@@ -35,6 +35,9 @@ attr_accessor :sender, :receiver, :status, :amount
 
   def reverse_transfer
 
+    @sender.deposit(@amount)
+    @receiver.withdraw(@amount)
+    @status = "reversed"
   end 
 
 
