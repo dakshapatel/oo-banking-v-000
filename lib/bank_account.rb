@@ -23,10 +23,12 @@ def display_balance
 end
 
 def valid?
-  if @balance == 0 || @status == "closed"
-    return false
-  else
+  #if @balance == 0 || @status == "closed"
+    if @balance > 0 && @status == "open"
+      
     return true
+  else
+    return false
   end
 end
 
