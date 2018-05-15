@@ -13,8 +13,14 @@ attr_accessor :sender, :receiver, :status, :amount
     if @sender.valid? && @receiver.valid?
       return true
     else
-      return false 
+      return false
     end
+  end
+
+  def execute_transaction
+    @receiver.deposit(@amount)
+    @sender.withdraw(@amount) 
+
   end
 
 
