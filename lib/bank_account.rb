@@ -16,6 +16,11 @@ def deposit(amount)
 
 end
 
+def withdraw(amount)
+  @balance -= amount
+
+end
+
 def display_balance
   #binding.pry
   puts "Your balance is $#{@balance}."
