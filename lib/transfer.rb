@@ -23,7 +23,7 @@ attr_accessor :sender, :receiver, :status, :amount
     @sender.withdraw(@amount)
     @status = "complete"
     #if the transfer status is not = to complete than do the transfer
-
+  end 
   end
 
 
