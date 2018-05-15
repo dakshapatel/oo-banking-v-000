@@ -20,7 +20,7 @@ attr_accessor :sender, :receiver, :status, :amount
   def execute_transaction
     @receiver.deposit(@amount)
     @sender.withdraw(@amount) 
-
+    @status = "complete"
   end
 
 
