@@ -1,8 +1,8 @@
 class Transfer
 
 
-  def initialize(sender, reciever, amount)
-  
+  def initialize(sender, receiver, amount)
+
 
   end
 
