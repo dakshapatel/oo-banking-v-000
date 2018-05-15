@@ -9,5 +9,13 @@ attr_accessor :sender, :receiver, :status, :amount
     @amount = amount
   end
 
+  def valid?
+    if @sender.valid? && @receiver.valid?
+      return true
+    else
+      return false 
+    end
+  end
+
 
 end
