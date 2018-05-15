@@ -22,9 +22,11 @@ def display_balance
   #puts output
 end
 
-def valid
-#open status && balance > 0
-#is valid
+def valid?
+  if @balance == 0 || @status == "closed"
+    return false
+  
+
 end
 
 def close_account
