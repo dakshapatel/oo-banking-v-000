@@ -22,9 +22,7 @@ def withdraw(amount)
 end
 
 def display_balance
-  #binding.pry
-  puts "Your balance is $#{@balance}."
-  #puts output
+  return "Your balance is $#{@balance}."
 end
 
 def valid?
