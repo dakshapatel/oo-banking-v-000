@@ -26,8 +26,8 @@ def valid?
   if @balance == 0 || @status == "closed"
     return false
   else
-    return true 
-
+    return true
+  end
 end
 
 def close_account
