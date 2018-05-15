@@ -16,8 +16,8 @@ def deposit(amount)
 end
 
 def display_balance
-  self.balance
-# can display its(self) balance
+  @balance
+
 end
 
 def valid
