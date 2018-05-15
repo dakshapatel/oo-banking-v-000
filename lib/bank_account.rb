@@ -25,7 +25,6 @@ end
 def valid?
   #if @balance == 0 || @status == "closed"
     if @balance > 0 && @status == "open"
-
     return true
   else
     return false
@@ -33,6 +32,6 @@ def valid?
 end
 
 def close_account
-  #can close its account(self)
+   @status = "closed"
 end
 end
